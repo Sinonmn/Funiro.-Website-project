@@ -1,7 +1,7 @@
 
 # Funiro – Responsive Furniture Store (Vanilla JS)
 
-**Live-Demo**: https://sinonmn.github.io/Funiro-Website-project (или твой Netlify/GitHub Pages линк)
+**Live-Demo**: https://sinonmn.github.io/Funiro-Website-project 
 
 https://imgur.com/a/DG09Mae  
 *(Desktop-Version)*
