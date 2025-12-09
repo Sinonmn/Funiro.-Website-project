@@ -6,7 +6,7 @@
 https://imgur.com/a/DG09Mae  
 *(Desktop-Version)*
 
-![](https://i.imgur.com/XXXXXXX.png)  
+![](https://drive.google.com/drive/u/0/home)  
 *(Mobile-Version)*
 
 
