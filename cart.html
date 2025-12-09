@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart - Funiro.</title>
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+
+	<header class="header">
+    <!-- Navbar -->
+    <nav>
+        <div class="header__container">
+            <div class="header__navbar navbar">
+                <div class="logo"> <a href="#">Funiro.</div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Products</a><span class="menu__arrow"><img src="img/header/arrow.svg" alt="34"></span>
+							<div class="menu__dropdown dropdown-menu">
+								<div class="dropdown-menu__content">
+									<p class="dropdown-menu__text"><a href="#">Furniture collection for your home</a></p>
+									<p class="dropdown-menu__text"><a href="#">Minimalist chairs design</a></p>
+									<p class="dropdown-menu__text"><a href="#">Modern sofas and tables</a></p>
+								</div>
+							</div></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Rooms</a><span class="menu__arrow"><img src="img/header/arrow.svg" alt=""></span>
+							<div class="menu__dropdown dropdown-menu">
+								<div class="dropdown-menu__content">
+									<p class="dropdown-menu__text"><a href="#">Furniture collection for your home</a></p>
+									<p class="dropdown-menu__text"><a href="#">Minimalist chairs design</a></p>
+									<p class="dropdown-menu__text"><a href="#">Modern sofas and tables</a></p>
+								</div>
+							</div></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Inspirations</a></li>
+                </ul>
+					<div class="header__search search-header">
+						<form  class="search-header__form">
+							<span class="search-header__img"><img src="img/header/search.svg" alt=""></span>
+							<input type="text" class="search-header__input" placeholder="Search for minimalist chair">
+						</form>
+					</div>
+					<div class="header__like like-header">
+						<a href="#" class="like-header__img"><span class="like-header__img"><img src="img/header/like.svg" alt=""></span></a>
+					</div>
+					<div class="header__cart cart-header">
+						<a href="cart.html" class="cart-header__img"><span><img src="img/header/cart.svg" alt=""></span></a>
+						<span class="cart-header__counter" id="cartCounter">0
+						</span>
+					</div>
+					<div class="header__avatar avatar-header">
+						<span class="avatar-headr__img">
+							<a href="#"><img src="img/header/avatar.png" alt=""></a>
+						</span>
+					</div>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+	<main>
+		<section class="cart">
+			<div class="cart__container">
+				<h1 class="cart__title">
+					Your Shopping Cart
+				</h1>
+
+				<!-- Состояние: пустая корзина -->
+				<div class="cart__empty" id="cartEmpty">
+					<h2 class="cart__empty-title">Your cart is empty</h2>
+					<p class="cart__empty-text">Looks like you haven't added any products yet.</p>
+					<a href="index.html" class="cart__empty-link">Continue Shopping</a>
+				</div>
+
+				<!-- Состояние: корзина с товарами -->
+				<div class="cart__content" id="cartContent">
+					<div class="cart__items" id="cartItems">
+						<!-- Товары будут добавляться динамически -->
+					</div>
+
+					<div class="cart__summary">
+						<h3 class="cart__summary-title">Order Summary</h3>
+
+						<div class="cart__summary-row">
+							<span class="cart__summary-label">Items:</span>
+							<span class="cart__summary-value" id="cartItemsCount">0</span>
+						</div>
+
+						<div class="cart__summary-row">
+							<span class="cart__summary-label">Subtotal:</span>
+							<span class="cart__summary-value" id="cartSubtotal">Rp 0</span>
+						</div>
+
+						<div class="cart__summary-row cart__summary-row--total">
+							<span class="cart__summary-label">Total:</span>
+							<span class="cart__summary-value cart__summary-value--total" id="cartTotal">Rp 0</span>
+						</div>
+
+						<button class="cart__checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+
+						<div class="cart__actions">
+							<button class="cart__clear-btn" id="clearCartBtn">Clear Cart</button>
+							<a href="index.html" class="cart__continue-link">← Continue Shopping</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+	<div class="footer__container">
+
+		<div class="footer__grid">
+
+			<!-- 1. Логотип + контакты -->
+			<div class="footer__col footer__col--brand">
+				<h3 class="footer__logo footer__title">Funiro.</h3>
+				<p class="footer__desc">
+					Worldwide furniture store since<br>2020. We sell over 1000+ branded<br>products on our website
+				</p>
+				<address class="footer__contacts">
+					<p>Sawojajar Malang, Indonesia</p>
+					<a href="tel:+62894563455">+6289 456 3455</a>
+					<p>www.funiro.com</p>
+				</address>
+			</div>
+
+			<!-- 2. Menu -->
+			<nav class="footer__col">
+				<h4 class="footer__title">Menu</h4>
+				<ul class="footer__links">
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Rooms</a></li>
+					<li><a href="#">Inspirations</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Terms & Policy</a></li>
+				</ul>
+			</nav>
+
+			<!-- 3. Account -->
+			<nav class="footer__col">
+				<h4 class="footer__title">Account</h4>
+				<ul class="footer__links">
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">My Cart</a></li>
+					<li><a href="#">My catalog</a></li>
+				</ul>
+			</nav>
+
+			<!-- 4. Stay Connected -->
+			<nav class="footer__col">
+				<h4 class="footer__title">Stay Connected</h4>
+				<ul class="footer__links">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>
+				</ul>
+			</nav>
+
+			<!-- 5. Форма подписки (всегда справа) -->
+			<div class="footer__col footer__col--form">
+				<h4 class="footer__title">Stay Updated</h4>
+				<form class="footer__form" action="#" method="POST">
+					<div class="footer__form-inner">
+						<input type="email" name="email" placeholder="Enter your email" required>
+						<button type="submit">
+							<img src="img/footer/tg.svg" alt="Send">
+						</button>
+					</div>
+
+					<!-- Вот сюда безопасно летят телефон и адрес -->
+					<input type="hidden" name="address" value="Sawojajar Malang, Indonesia">
+					<input type="hidden" name="phone" value="+62894563455">
+					<input type="hidden" name="source" value="funiro-footer">
+				</form>
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<div class="overlay"></div>
+
+	<script src="./js/cart.js"></script>
+	<script src="./js/scripts.min.js"></script>
+</body>
+
+</html>
